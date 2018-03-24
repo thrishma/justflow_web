@@ -1,0 +1,60 @@
+.header{
+	width:70%;
+}
+.ui-state-active{
+	background-color: blue !important;
+}
+
+.ui-widget-header{
+	 border: 1px solid white; 
+     background: black !important; 
+}
+
+
+.ui-datepicker-inline{
+	width: 70%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {	
+    background: black !important; 
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	background: green !important;
+    color: #FFF !important;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+	padding: 2.2em !important;
+}
+
+
+.dp-highlight .ui-state-default {
+    background: red !important;
+    color: #FFF;
+}
+
+.color_box{
+	width: 70%;
+    margin: 40px;
+}
+.red{
+	background: red;
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;   
+    float: left;
+}
+.color_box>p{
+	text-align: left;
+}
+.green{
+	background: green;
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;   
+    float: left;
+}
+

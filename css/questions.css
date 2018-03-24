@@ -1,0 +1,30 @@
+label{
+	color: white;
+    font-size: 20px;
+    padding:10px;
+    
+}
+
+.header>p>strong{
+	color:red;
+}
+.input-group{
+    text-align: left !important; 
+}
+.content{
+	width:50%;
+}
+input{
+	border:1px solid white !important;
+	margin:10px;
+}
+
+form{
+	margin-top: 50px;
+}
+
+.header>h2{
+    font-size:30px !important;
+    line-height: 45px;
+    padding: 10px;
+}
