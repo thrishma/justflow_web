@@ -27,11 +27,26 @@
 			array_push($errors, "Passwords do not match");
 		}
 
+		$check_if_user_name = mysqli_query($db,"SELECT * FROM users WHERE username='$username'");
+		$check_if_user_email = mysqli_query($db,"SELECT * FROM users WHERE email='$email'");
+
+		if(mysqli_num_rows($check_if_user_name) > 0){ array_push($errors, "User name has been taken");}
+		if(mysqli_num_rows($check_if_user_email) > 0){ array_push($errors, "Email Id is already registered with us");}
+
 		// register user if there are no errors in the form
 		if (count($errors) == 0) {
 			$password = md5($password_1);//encrypt the password before saving in the database
-			$query = "INSERT INTO users (username, email, password) 
-					  VALUES('$username', '$email', '$password')";
+			$confirmcode = rand();
+			$query = "INSERT INTO users (username, email, password, confirmed, confirm_code) 
+					  VALUES('$username', '$email', '$password', '0', '$confirmcode')";
+
+			$message = "Please confirm your Email
+						Click the below link to verify your account
+						https://www.justflow.com/emailconfirmation.php?username=$username&code=$confirmcode";
+
+			mail($email, "Just Flow Confirm Email", $message, "From: DoNotReply@justflow.com");
+			echo "Registration complete! Please confirm your email";
+
 			mysqli_query($db, $query);
 
 			$_SESSION['username'] = $username;
