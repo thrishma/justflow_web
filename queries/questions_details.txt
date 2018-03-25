@@ -1,0 +1,7 @@
+create table questions_details(
+	questions_id int auto_increment not null primary key,
+    username varchar(256) not null,
+    bleeding_time int not null,
+    start_date date not null,
+    menstural_cycle_lenghth int not null
+);

@@ -1,0 +1,8 @@
+create table users(
+	id int auto_increment not null primary key,
+    username varchar(256) not null,
+    email varchar(256) not null,
+    password varchar(256) not null,
+    confirmed int not null,
+    confirmed_code int not null
+);
