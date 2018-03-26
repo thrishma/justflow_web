@@ -28,11 +28,11 @@ time, mark, audio, video {
 }
 
 body {
-    line-height:1;
-    background-color: black;
-    color: white;
-    font-family: Satisfy;
-    padding:20px;
+    line-height:1 !important;
+    background-color: black !important;
+    color: white !important;
+    font-family: Satisfy !important;
+    padding:20px !important ;
 }
 
 article,aside,details,figcaption,figure,
@@ -60,6 +60,8 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    text-decoration: none !important;
+
 }
 
 /* change colours to suit your needs */
@@ -162,3 +164,21 @@ button{
     from {color: red;}
     to {color: black;}
 }
+
+.btn{
+    margin:20px auto;
+
+}
+
+.header{
+    margin-top: 30px;
+}
+
+.logo{
+    width: 230px !important;
+}
+
+.content{
+        font-size: 20px;
+        line-height: 25px;
+    }

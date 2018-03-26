@@ -1,7 +1,3 @@
-.main_wrapper{
-
-}
-
 .header>h2{
 	font-size:40px;
 	line-height: 45px;
@@ -12,9 +8,6 @@
 	font-size:18px;
 }
 
-form{
-	width:50%;
-}
 .logo{
 	width:20%;
 }

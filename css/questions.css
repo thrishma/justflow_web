@@ -1,8 +1,7 @@
 label{
 	color: white;
     font-size: 20px;
-    padding:10px;
-    
+    padding:10px;    
 }
 
 .header>p>strong{
@@ -11,9 +10,9 @@ label{
 .input-group{
     text-align: left !important; 
 }
-.content{
+/*.content{
 	width:50%;
-}
+}*/
 input{
 	border:1px solid white !important;
 	margin:10px;
@@ -24,7 +23,7 @@ form{
 }
 
 .header>h2{
-    font-size:30px !important;
-    line-height: 45px;
+    font-size:25px !important;
+    line-height: 25px !important;
     padding: 10px;
 }
