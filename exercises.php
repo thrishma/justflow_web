@@ -51,7 +51,7 @@
 <center>
 		<div class="main_wrapper">
 			<div class="header">			
-				<h2>Want to feel better through food?</h2>				
+				<h2>Want to feel better through excercise?</h2>				
 			</div>
 			<div class="content">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
