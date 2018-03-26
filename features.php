@@ -13,28 +13,12 @@
 	}
 
 ?>
-<style>
-	.btn{
-		font-size: 20px !important;	    
-	    margin:0px !important;
-	    margin-top:10px !important;
-	    padding:25px !important;
-	}
-	.btn a{
-		text-decoration: none !important; 
-		color: black;
-	}
-	button.btn:nth-child(2n) {
-    background-color: #DC143C !important;
-}
-</style>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Questions - Just Flow</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+	<link rel="stylesheet" type="text/css" href="css/features.css">	
 
 	<link rel="icon" type="image/png" href="img/logo.png" />
 
@@ -56,7 +40,9 @@
 			<div class="content">
 				<button class="btn"><a href="calendar.php">Period Tracker</a></button>
 				<button class="btn"><a href="moodTracker.php">Mood Tracker</a></button>			
-				<button class="btn"><a href="games.php">Games</a></button>			
+				<button class="btn"><a href="games.php">Games</a></button>		
+				<button class="btn"><a href="medicines.php">Medicines</a></button>
+				<button class="btn"><a href="faqs.php">FAQ's</a></button>	
 			</div>
 			<img src="img/blood.png" alt="crying and blood image" style="width:80%"></img>
 		</div>
