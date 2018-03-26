@@ -7,7 +7,7 @@ inside the files foods.php, exercises.php, FAQs.php, and medicines.php
 
 
 
-3. Change the path here LOAD DATA INFILE 'C:/wamp64/tmp/faq.csv' as per the folder you store the csv files in 
+3. Change the path here LOAD DATA INFILE 'C:/wamp64/tmp/' as per the folder you store the csv files in 
 
 
 

@@ -3,7 +3,7 @@ create database moods;	//if doesn't exist
 
 create table foods(id INT(10) PRIMARY KEY AUTO_INCREMENT, Title LONGTEXT, Content LONGTEXT);
 
-LOAD DATA INFILE 'C:/wamp64/tmp/foods.csv' 
+LOAD DATA INFILE 'foods.csv' 
 INTO TABLE foods
 FIELDS TERMINATED BY '@' 
 ENCLOSED BY '"'
