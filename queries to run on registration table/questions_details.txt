@@ -1,3 +1,7 @@
+create database registration;//if not created
+
+
+//create the below table in registration
 create table questions_details(
 	questions_id int auto_increment not null primary key,
     username varchar(256) not null,
