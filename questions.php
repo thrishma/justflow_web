@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Questions</title>
+	<title>Questions - Just Flow</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/questions.css">
 
@@ -31,6 +31,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 </head>
 <body>
+	<?php include('menu.php') ?>
 	<center>
 		<div class="main_wrapper">
 			<div class="header">
