@@ -20,6 +20,9 @@
     color: white;
     display: block;
     transition: 0.3s;
+    background: black !important;
+    margin: 10px !important;
+    border-radius: 10px !important;
 }
 
 .sidenav a:hover {
@@ -46,12 +49,12 @@
 .logo-menu>img{
     width: 30px;
 }
+.closebtn{
+	background-color: none !important;
+}
 </style>
 <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#"></a>
-      <a href="#"></a>
-      
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>     
       <a href="aboutUs.php">About Us</a>
       <a href="features.php">Features</a>
       <a href="#">FAQ's</a>   
