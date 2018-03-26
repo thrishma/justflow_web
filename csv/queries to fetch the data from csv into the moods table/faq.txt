@@ -1,0 +1,10 @@
+create database moods;
+
+
+create table faq (id INT(10) PRIMARY KEY AUTO_INCREMENT, Title LONGTEXT, Content LONGTEXT);
+LOAD DATA INFILE 'C:/wamp64/tmp/faq.csv' 
+INTO TABLE faq
+FIELDS TERMINATED BY '@' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'        
+IGNORE 1 ROWS;

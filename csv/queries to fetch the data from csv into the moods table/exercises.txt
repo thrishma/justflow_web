@@ -1,0 +1,14 @@
+create database moods;	//if doesn't exist
+
+
+create table exercises(id INT(10) PRIMARY key not null AUTO_INCREMENT, Title LONGTEXT not null, Content LONGTEXT not null);
+
+
+
+LOAD DATA INFILE 'exercises.csv' 
+INTO TABLE exercises
+CHARACTER SET UTF8
+FIELDS TERMINATED BY '@' 
+ENCLOSED BY ''
+LINES TERMINATED BY '\r\n'        
+IGNORE 1 ROWS;
