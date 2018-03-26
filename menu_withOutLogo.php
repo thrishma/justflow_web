@@ -54,7 +54,7 @@
 }
 </style>
 <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>     
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: #b71818 !important;">&times;</a>     
       <a href="aboutUs.php">About Us</a>
       <a href="features.php">Features</a>
       <a href="#">FAQ's</a>   
