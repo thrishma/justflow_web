@@ -1,12 +1,12 @@
 <style>
-	.sidenav {
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #b71818;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -17,7 +17,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
 }
@@ -48,24 +48,25 @@
 }
 </style>
 <div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#"></a>
-	  <a href="#"></a>
-	  <a href="#"></a>
-	  <a href="#"></a>
-	  <a href="aboutUs">About Us</a>
-	  <a href="features.php">Features</a>
-	  <a href="#">FAQ's</a>	  
-	  <a href="#">Contact Us</a>
-	  <a href="#">Log out</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#"></a>
+      <a href="#"></a>
+      
+      <a href="aboutUs.php">About Us</a>
+      <a href="features.php">Features</a>
+      <a href="#">FAQ's</a>   
+      <a href="#">Contact Us</a>
+      <a href="#">Log out</a>
 </div>
 <span style="font-size:30px;cursor:pointer; display:table-cell;" onclick="openNav()">&#9776;</span>
-<script>
-	function openNav() {
-	    document.getElementById("mySidenav").style.width = "250px";
-	}
 
-	function closeNav() {
-	    document.getElementById("mySidenav").style.width = "0";
-	}
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 </script>
