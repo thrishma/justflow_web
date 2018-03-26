@@ -35,8 +35,9 @@
 	<center>
 		<div class="main_wrapper">
 			<div class="header">			
-				<h2>Are you in pain? <br>Do you want Medicines to help you with your cramps?</h2>
+				<h2>Are you in pain? <br>Do you want Medicines to help you tackle your menstrual problems?</h2>
 				<h4>Here is a list of medicines that will help you out</h4>
+				<marquee class="scroll" behavior="scroll" direction="left">DISCLAIMER: This list is only for reference. Please consult gynaecologist before any specified drug intake </marquee>
 			</div>
 			<div class="content">
 				<div class="container">   
@@ -55,7 +56,7 @@
 					?>  
 				  <table class="table">
 				    <thead>
-				      <tr>
+				      <tr class="header-drug">
 				        <th>Drug Name</th>
 				        <th>Description</th>
 				      </tr>

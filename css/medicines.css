@@ -9,3 +9,26 @@ tr{
 	background-color: white;
 	color: black;
 }
+
+.scroll{
+	color: red;
+    background: #544d4d;   
+    padding:5px;    
+    margin: 20px;
+    line-height: 26px;
+    animation-name: flash;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: white;}
+    to {color: black;}
+}
+
+.header-drug{
+	background:white !important;
+}

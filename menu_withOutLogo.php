@@ -56,10 +56,9 @@
 <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: #b71818 !important;">&times;</a>     
       <a href="aboutUs.php">About Us</a>
-      <a href="features.php">Features</a>
-      <a href="#">FAQ's</a>   
-      <a href="#">Contact Us</a>
-      <a href="#">Log out</a>
+      <a href="FAQs.php">FAQ's</a>   
+      <a href="Contactus.php">Contact Us</a>
+      
 </div>
 <span style="font-size:30px;cursor:pointer; display:table-cell;" onclick="openNav()">&#9776;</span>
 

@@ -36,7 +36,7 @@
 	<title>Just Flow</title>
 </head>
 <body>
-	<?php include('menu.php') ?>
+	<?php include('menu_withOutLogo.php') ?>
 	<center>
 		<main>
 			<div class='main_wrapper'>
