@@ -27,3 +27,22 @@ form{
     line-height: 25px !important;
     padding: 10px;
 }
+
+.questionsSymbol{
+	width: 20px;
+    height: 20px;
+}
+#hover {
+    display: none;
+    width: 70%;
+    background: white;
+    color: red;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+.questionsSymbol:hover + #hover {
+    display: inline-block;
+}
