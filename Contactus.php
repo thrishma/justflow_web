@@ -13,28 +13,34 @@
 	}
 
 ?>
-<style>
-.content{
-        text-align: left;
-    }
-
-	.list{
-		text-align: left;
-		padding-left:20px;
-		padding-top:10px;
-		font-size: 20px;
-	}
-	.list>a{
-		text-decoration:none !important;
-		color: white;
-		display: block;
-	}
-</style>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>About Us - Just Flow</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main-contact.css">
+<!--===============================================================================================-->
+
+	<title>ContactUs - Just Flow</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
+	<link rel="stylesheet" type="text/css" href="css/contactus.css">	
 
 	<link rel="icon" type="image/png" href="img/logo.png" />
 
@@ -48,48 +54,78 @@
 </head>
 <body>
 	<?php include('menu.php') ?>
-	<center>
-		<div class="main_wrapper">
-			<div class="header">			
-			<h2>Just Flow - The go to menstural application</h2>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Want to get in touch with us? 
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<input class="input100" id="name" type="text" name="name" placeholder="Name">					
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input100" id="email" type="text" name="email" placeholder="Email">					
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Phone is required">
+					<input class="input100" id="phone" type="text" name="phone" placeholder="Phone">					
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea class="input100" name="message" placeholder="Your message..."></textarea>
+				</div>
+
+				<div class="contact100-form-checkbox">
+					<input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
+					<label class="label-checkbox100" for="ckb1">
+						Send copy to my-email
+					</label>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							Send Email
+						</button>
+					</div>
+				</div>
+			</form>
 		</div>
-		<div class="content">
-			<?php
-$action=$_REQUEST['action'];
-if ($action=="") /** display the contact form */
-{
-?>
-<form action="" method="POST" enctype="multipart/form-data">
-<input type="hidden" name="action" value="submit">
-Your name:<br>
-<input name="name" type="text" value="" size="30"/><br>
-Your email:<br>
-<input name="email" type="text" value="" size="30"/><br>
-Your message:<br>
-<textarea name="message" rows="7" cols="30"></textarea><br>
-<input type="submit" value="Send email"/>
-</form>
-<?php
-}
-else/* send the submitted data */
-$name=$_REQUEST['name'];
-$email=$_REQUEST['email'];
-$message=$_REQUEST['message'];
-if (($name=="")||($email=="")||($message==""))
-{
-echo "All fields are required, please fill <a href=\"\">the form</a> again.";  
-}
-else
-$from="From: $name<$email>\r\nReturn-path: $email";
-$subject="Message sent using your contact form";
-mail("youremail@yoursite.com", $subject, $message, $from);
-echo "Email sent!";
-?>			
-		</div>
-		</div>
-	</center>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
 </body>
 </html>
