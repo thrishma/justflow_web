@@ -29,6 +29,8 @@
 
 	<!-- font family -->
 	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 	<?php include('menu.php') ?>
@@ -46,14 +48,18 @@
 			<form method="POST" action="include/questions.inc.php">
 				<div class="input-group">
 					<label>How many days does your bleeding last?</label>
+						<img src="img/questionsSymbol.png" class="questionsSymbol" onclick="bleedingDays()">							
 					<input type="number" name="bleeding_time">
+
 				</div>
 				<div class="input-group">
 					<label>Start date of your last period?</label>
+					<img src="img/questionsSymbol.png" class="questionsSymbol" onclick="startDate()">							
 					<input type="date" name="start_date" value="yyyy-mm-dd">
 				</div>
 				<div class="input-group">
 					<label>How long is your menstural cycle?</label>
+					<img src="img/questionsSymbol.png" class="questionsSymbol" onclick="menstrualCycle()">
 					<input type="number" name="menstural_cycle_length">
 				</div>						
 				<button type="submit" class="btn" name="questions">Submit</button>
@@ -64,6 +70,17 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		function bleedingDays(){
+			swal('Normal menstruation can last from one to seven days, although for most women with regular menstrual cycles, their period lasts an average of three to five days.');
+		}
+		function startDate(){
+			swal('The previous start date of your menstural cycle');
+		}
+		function menstrualCycle(){
+			swal('The menstrual cycle, which is counted from the first day of one period to the first day of the next, isnt the same for every woman. Menstrual flow might occur every 21 to 35 days and last two to seven days.');
+		}
+	</script>
 		
 </body>
 </html>

@@ -54,13 +54,12 @@
 }
 </style>
 <div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" style="background-color: #b71818 !important;" class="closebtn" onclick="closeNav()">&times;</a>
-	  
+	  <a href="javascript:void(0)" style="background-color: #b71818 !important;" class="closebtn" onclick="closeNav()">&times;</a>	  
 	  <a href="aboutUs.php">About Us</a>
 	  <a href="features.php">Features</a>
 	  <a href="FAQs.php">FAQ's</a>	  
 	  <a href="Contactus.php">Contact Us</a>
-	  <a href="index.php">Log out</a>
+	  <a href="index.php" onClick="logout.php">Log out</a>
 </div>
 <span style="font-size:30px;cursor:pointer; display:table-cell;" onclick="openNav()">&#9776;</span>
 <div class="logo-menu"><img src="img/logo.png"></div>
