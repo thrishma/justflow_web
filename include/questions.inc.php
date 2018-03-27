@@ -25,7 +25,7 @@
 		if (count($errors) == 0) {
 
 			$query = "INSERT INTO questions_details (questions_id,username, bleeding_time, start_date, menstural_cycle_length) 
-					  VALUES('',$user_name', '$bleeding_time', '$start_date', '$menstural_cycle_length')";
+					  VALUES('','$user_name', '$bleeding_time', '$start_date', '$menstural_cycle_length')";
 			$results = mysqli_query($db, $query);			
 			header('location: ../calendar.php');	
 				

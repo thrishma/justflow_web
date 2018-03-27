@@ -38,7 +38,7 @@
 			$password = md5($password_1);//encrypt the password before saving in the database
 			$confirmcode = rand();
 			$query = "INSERT INTO users (id,username, email, password, confirmed, confirm_code) 
-					  VALUES('',$username', '$email', '$password', '0', '$confirmcode')";
+					  VALUES('','$username', '$email', '$password', '0', '$confirmcode')";
 
 			$message = "Please confirm your Email
 						Click the below link to verify your account
