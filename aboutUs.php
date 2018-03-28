@@ -51,16 +51,16 @@
 	<center>
 		<div class="main_wrapper">
 			<div class="header">			
-			<h2>Just Flow - The go to menstural application</h2>
+			<h2>Just Flow - The go to menstrual application</h2>
 		</div>
 		<div class="content">
 			<p>A group of 3 female students have developed this application to eradicate the use of pen and paper to keep track of menstrual cycles. Not knowing how to take care of your mood swings, cravings or even your cramps a thing of past. With Just Flow you can take care of all these things with just a single application.</p>
 			<div class="list">
 				<p>We offer features such as-</p>
 				<a href="calendar.php">- Period Tracker</a>
-				<a href="">- Exercises and Foods based on your moods</a>
+				<a href="moodTracker.php">- Exercises and Foods based on your moods</a>
 				<a href="games.php">- Stress buster games to control your mood swings</a>
-				<a href="medicines.php">- Names of medicines for your cramps</a>
+				<a href="medicines.php">- Information about medicines to ease your flow</a>
 				<a href="faqs.php">- Answers to all your basic periods related questions</a>				
 			</div>			
 		</div>

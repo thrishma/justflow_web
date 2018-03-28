@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Foods - Just Flow</title>
+	<title>Exercises - Just Flow</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
 	<link rel="stylesheet" type="text/css" href="css/foods.css">	
 
@@ -51,7 +51,7 @@
 <center>
 		<div class="main_wrapper">
 			<div class="header">			
-				<h2>Want to feel better through excerciseques?</h2>				
+				<h2>Want to feel better through excercises?</h2>				
 			</div>
 			<div class="content">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
