@@ -40,7 +40,7 @@
 
 	<title>ContactUs - Just Flow</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
-	<link rel="stylesheet" type="text/css" href="css/contactus.css">	
+	
 
 	<link rel="icon" type="image/png" href="img/logo.png" />
 
@@ -56,7 +56,7 @@
 	<?php include('menu.php') ?>
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" action="send_script.php" method="POST">
 				<span class="contact100-form-title">
 					Want to get in touch with us? 
 				</span>
@@ -69,25 +69,18 @@
 					<input class="input100" id="email" type="text" name="email" placeholder="Email">					
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Phone is required">
-					<input class="input100" id="phone" type="text" name="phone" placeholder="Phone">					
+				<div class="wrap-input100 validate-input" data-validate = "Subject is required">
+					<input class="input100" id="subject" type="text" name="subject" placeholder="Subject">					
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<textarea class="input100" name="message" placeholder="Your message..."></textarea>
-				</div>
-
-				<div class="contact100-form-checkbox">
-					<input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
-					<label class="label-checkbox100" for="ckb1">
-						Send copy to my-email
-					</label>
-				</div>
+				</div>			
 
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
-						<button class="contact100-form-btn">
+						<button class="contact100-form-btn" type="submit" value="submit">
 							Send Email
 						</button>
 					</div>
