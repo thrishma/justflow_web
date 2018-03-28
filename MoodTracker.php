@@ -43,31 +43,31 @@
       <div class="content">
         <div class="row">
           <div class="col-xs-4">
-            <a href="Options.php"><img class="img-responsive icons" src="img/smilie/angry.png" alt="Angry Emoji"></a>
-            <a href="Options.php"><span class="label label-default">Angry</span></a>
+            <a href="options.php"><img class="img-responsive icons" src="img/smilie/angry.png" alt="Angry Emoji"></a>
+            <a href="options.php"><span class="label label-default">Cranky</span></a>
           </div>
           <div class="col-xs-4">
-            <a href="Options.php"><img class="img-responsive icons" src="img/smilie/confused.png" alt="Confused Emoji"></a>
-            <a href="Options.php"><span class="label label-default">Confused</span></a>
+            <a href="options.php"><img class="img-responsive icons" src="img/smilie/confused.png" alt="Confused Emoji"></a>
+            <a href="options.php"><span class="label label-default">Confused</span></a>
           </div>
           <div class="col-xs-4">
-            <a href="Options.php"><img class="img-responsive icons" src="img/smilie/crying.png" alt="Crying Emoji"></a>
-            <a href="Options.php"><span class="label label-default">Crying</span></a>   
+            <a href="options.php"><img class="img-responsive icons" src="img/smilie/crying.png" alt="Crying Emoji"></a>
+            <a href="options.php"><span class="label label-default">Craving</span></a>   
           </div>
         </div>
 
         <div class="row">
           <div class="col-xs-4">
-            <a href="Options.php"><img class="img-responsive icons" src="img/smilie/sad.png" alt="Sad Emoji"></a>
-            <a href="Options.php"><span class="label label-default">Sad</span></a>
+            <a href="options.php"><img class="img-responsive icons" src="img/smilie/sad.png" alt="Sad Emoji"></a>
+            <a href="options.php"><span class="label label-default">Sad</span></a>
           </div>
           <div class="col-xs-4">
-            <a href="Options.php"><img class="img-responsive icons" src="img/smilie/happy.png" alt="Happy Emoji"></a>
-            <a href="Options.php"><span class="label label-default">Happy</span></a>
+            <a href="options.php"><img class="img-responsive icons" src="img/smilie/happy.png" alt="Happy Emoji"></a>
+            <a href="options.php"><span class="label label-default">Happy</span></a>
           </div>
           <div class="col-xs-4">
-            <a href="Options.php"><img class="img-responsive icons" src="img/smilie/grumpy.jpg" alt="Grumpy Emoji"></a>
-            <a href="Options.php"><span class="label label-default">Grumpy</span></a>
+            <a href="options.php"><img class="img-responsive icons" src="img/smilie/grumpy.jpg" alt="Grumpy Emoji"></a>
+            <a href="options.php"><span class="label label-default">Stressed</span></a>
           </div>
         </div>        
       </div>      
