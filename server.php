@@ -93,7 +93,7 @@ https://www.thrishma.com/justflow_web/confirmLink.php?username=$username&code=$c
 				$query_login_first_results = mysqli_query($conn, $query_login_first);
 				while($row = mysqli_fetch_array($query_login_first_results)){
 					if (mysqli_num_rows($results) == 1){
-						if(($row['confirmed']) == 0){
+						if(($row['confirm_code']) == 0){
 						header('location: questions.php');
 						}else{
 							header('location: features.php');
