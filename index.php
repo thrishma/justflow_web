@@ -42,7 +42,7 @@
 			<div class='main_wrapper'>
 				<div class="header">
 					<h2>Welcome to Just Flow</h2>
-				    <h2>The go to menstural application</h2>
+				    <h2>The go to menstrual application</h2>
 				    <img src="img/logo.gif" class="logo"></img>
 				</div>
        

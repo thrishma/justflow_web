@@ -58,7 +58,7 @@
 					<input type="date" name="start_date" value="yyyy-mm-dd">
 				</div>
 				<div class="input-group">
-					<label>How long is your menstural cycle?</label>
+					<label>How long is your menstrual cycle?</label>
 					<img src="img/questionsSymbol.png" class="questionsSymbol" onclick="menstrualCycle()">
 					<input type="number" name="menstural_cycle_length">
 				</div>						

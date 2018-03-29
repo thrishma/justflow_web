@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Questions - Just Flow</title>
+	<title>Options - Just Flow</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
 	<link rel="stylesheet" type="text/css" href="css/features.css">	
 
