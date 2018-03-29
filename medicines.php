@@ -42,13 +42,7 @@
 			<div class="content">
 				<div class="container">   
 					<?php
-					$servername = "localhost";
-					$username = "root";
-					$password = "";
-					$dbname = "moods";
-
-					// Create connection
-					$conn = mysqli_connect('localhost', 'root', '', 'moods');	
+					include('serverLoginDetails.php');	
 					// Check connection
 					if (!$conn) {
 						die("Connection failed: " . mysqli_connect_error());

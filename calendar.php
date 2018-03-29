@@ -56,8 +56,7 @@
                 $_SESSION['success'] = "";
                 $user_name = $_SESSION['username'];   
 
-                // connect to database
-                $conn =     mysqli_connect('localhost', 'root', '', 'registration');
+                include('serverLoginDetails.php');
                 // Check connection
                 if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
