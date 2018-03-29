@@ -1,7 +1,7 @@
 create database moods;	//if doesn't exist
 
 
-create table exercises (id INT(10), moods VARCHAR(255), Title LONGTEXT, Content LONGTEXT);
+create table foods (id INT(10), moods VARCHAR(255), Title LONGTEXT, Content LONGTEXT);
 
 LOAD DATA INFILE 'C:/wamp64/tmp/exercises.csv' 
 INTO TABLE exercises
