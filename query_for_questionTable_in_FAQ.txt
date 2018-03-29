@@ -1,0 +1,3 @@
+create database moods; //if doesen't exist
+
+create table questions (question LONGTEXT);
