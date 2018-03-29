@@ -1,18 +1,3 @@
-<?php 
-	session_start(); 
-
-	if (!isset($_SESSION['username'])) {
-		$_SESSION['msg'] = "You must log in first";
-		header('location: login.php');
-	}
-
-	if (isset($_GET['logout'])) {
-		session_destroy();
-		unset($_SESSION['username']);
-		header("location: login.php");
-	}
-
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,13 +23,7 @@
   <body>	
     <div class="container">
 	<?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "moods";
-
-	// Create connection
-	$conn = mysqli_connect('localhost', 'root', '', 'moods');
+	include('serverLoginDetails.php');
 	// Check connection
 	if (!$conn) {
 		die("Connection failed: " . mysqli_connect_error());
@@ -326,16 +305,34 @@
         </div>
       </div>
     </div>
+	<?php    
+	if(isset($_POST['SubmitButton'])){ //check if form was submitted
+	  $input = $_POST['inputText']; //get input text
+	  $sql = "INSERT INTO questions (question)
+	  VALUES ('$input')";
+      if ($conn->query($sql) === TRUE) 
+	  {
+		  $message = "Thank you! We have received your question.";
+		  echo "<font color='#6d84b4'>".$message; 
+	  } 
+	  else 
+	  {
+			echo "Error: " . $sql . "<br>" . $conn->error;
+	  }
+	}    
+	?>
     <div class="col-md-3">
       <div class="form-group">
+	  <form action="" method="post">
 	  <style type="text/css">
 	  .form-group{color : white;}
 	  </style>
 	  <label for="comment">Have more questions? Ask us here:</label><br>
-	  <textarea class="form-control" rows="5" id="comment"></textarea>	 
-	  <button type="button" class="btn btn-primary">Submit</button>
+	  <textarea class="form-control" rows="5" id="comment" name="inputText"></textarea>	 
+	  <button type="submit" class="btn btn-primary" name="SubmitButton">Submit</button>
       </div>
 	  </form>
+	 
     </div>
   </div>
 </div>	
