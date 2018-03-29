@@ -35,7 +35,7 @@
 	<center>
 		<div class="main_wrapper">
 			<div class="header">			
-				<h2>How are you feeling today? Moody? Sad? Play our personalised games to feel better</h2>
+				<h2>How are you feeling today? Angry? Stressed? Play our personalised games to feel better</h2>
 			</div>
 			<div class="content">
 				<button class="btn"><a href="games/JustSmash">Just Smash</a></button>
