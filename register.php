@@ -23,7 +23,7 @@
 		<div class="main_wrapper">
 			<div class="header">
 				<h2>Welcome to Just Flow</h2>
-				<p>The go to app for menstural problems</p>
+				<p>The go to menstrual application</p>
 				<p>Register yourself right here!</p>
 				<img src=img/logo.gif class="logo"></img>	
 			</div>	

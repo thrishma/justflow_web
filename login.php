@@ -28,7 +28,7 @@
 		<div class="main_wrapper">
 			<div class="header">
 				<h2>Welcome to Just Flow</h2>
-				<p>The go to app for menstural problems</p>
+				<p>The go to menstrual application</p>
 				<img src=img/logo.gif class="logo"></img>				
 			</div>
 			
@@ -48,7 +48,7 @@
 					<button type="submit" class="btn" name="login_user">Login</button>
 				</div>
 				<p>
-					Not yet a member yet? <a href="register.php" style="color:red;">Sign up</a>
+					Not a member yet? <a href="register.php" style="color:red;">Sign up</a>
 				</p>
 			</form>
 		</div>
